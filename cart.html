@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="header">
+        <a href="#"><img height="70" width="70" src="img/logo.jpg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                
+                
+            </ul>
+        </div>
+    </section>
+
+  <section class="cart-page">
+    <h2>Your Cart (<span id="total-items">0</span> items)</h2>
+    <div id="cart-items" class="cart-items-container"></div>
+
+    <div class="cart-summary">
+      <h3>Total: <span id="total-price">0</span></h3>
+      <div class="cart-buttons">
+        <button onclick="window.location.href='shop.html'" class="shop-btn">Continue Shopping</button>
+        <button onclick="generateBill()" class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
